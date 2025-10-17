@@ -1,0 +1,43 @@
+name: Functional tests
+
+on:
+  push:
+    branches-ignore:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * *'
+
+jobs:
+  set_datadog_team:
+    name: 'Set Datadog team'
+    uses: fingerprintjs/dx-team-toolkit/.github/workflows/set-datadog-team.yml@v1
+    secrets:
+      DD_API_KEY: ${{ secrets.INTEGRATIONS_DATADOG_API_KEY }}
+
+  functional_tests:
+    name: "Functional Tests PHP ${{ matrix.php_version }}"
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      max-parallel: 1
+      matrix:
+        php_version: [ "8.1", "8.2", "8.3", "8.4" ]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Setup PHP
+        uses: shivammathur/setup-php@c541c155eee45413f5b09a52248675b1a2575231
+        with:
+          php-version: "${{ matrix.php_version }}"
+          coverage: none
+          tools: composer:v2
+      - name: Install Dependencies
+        run: composer install -q --profile --ignore-platform-reqs --no-interaction --no-ansi --no-scripts --no-suggest --prefer-dist
+      - name: "Try to get data using SDK"
+        run: "php ./run_checks.php"
+        env:
+          FP_PRIVATE_API_KEY: "${{ secrets.FP_PRIVATE_API_KEY }}"
+          FP_API_HOST: "${{ secrets.FP_API_HOST }}"
+

@@ -1,0 +1,13 @@
+.idea
+/vendor/
+/.cache
+.phpunit.result.cache
+.DS_Store
+.vscode
+.env
+release/yarn-error.log
+release/node_modules
+.php-cs-fixer.cache
+cov/**/*.*
+!cov/**/.gitkeep
+**/node_modules

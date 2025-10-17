@@ -1,0 +1,29 @@
+version: '3'
+services:
+  composer:
+    image: composer:2.7
+    environment:
+      - COMPOSER_CACHE_DIR=/app/.cache/composer
+    volumes:
+      - ./:/app
+  php:
+    image: php:8.4-cli
+    volumes:
+      - ./:/app
+    working_dir: /app
+    env_file:
+      - .env
+  phpunit:
+    build: './docker/php'
+    volumes:
+      - ./:/app
+    working_dir: /app
+    entrypoint: vendor/bin/phpunit
+    env_file:
+      - .env
+  lint:
+    image: ghcr.io/php-cs-fixer/php-cs-fixer:3.64-php8.3
+    volumes:
+      - .:/code
+      - ./.php-cs-fixer.php:/code/.php-cs-fixer.php
+    command: fix --config=/code/.php-cs-fixer.php /code/src
