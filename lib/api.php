@@ -13,8 +13,6 @@ require_once(__DIR__ . '/classes/class_auth.php');
 require_once(__DIR__ . '/classes/class_user.php');
 require_once(__DIR__ . '/classes/class_user_wallet.php');
 require_once(__DIR__ . '/classes/class_gateway_crypto_nowpayments.php');
-require_once(__DIR__ . '/classes/class_betting.php');
-require_once(__DIR__ . '/classes/class_betting_coinflip.php');
 
 // Initialize classes
 $class_main = new class_main();
@@ -22,8 +20,6 @@ $class_auth = new class_auth();
 $class_user = new class_user();
 $class_user_wallet = new class_user_wallet();
 $class_gateway_crypto_nowpayments = new class_gateway_crypto_nowpayments();
-$class_betting = new class_betting();
-$class_betting_coinflip = new class_betting_coinflip();
 
 // Start a new session if it is not already started
 if (session_status() == PHP_SESSION_NONE) {
@@ -729,116 +725,10 @@ switch ($request_method | $request_URI) {
 		break;
 
 
-	/**
-	 * API Endpoint: /betting/get_overall_stats
-	 *
-	 * Method: GET
-	 *
-	 * Description:
-	 *   Retrieves the overall betting statistics for the logged-in user.
-	 *
-	 * Request Headers:
-	 *   Authorization: Bearer <user_token> (Optional, but user must be logged in)
-	 *
-	 * Returns:
-	 *   - HTTP Response Code: 200 on success, 400 for bad request, 401 for unauthorized access, 418 for invalid request method.
-	 *   - JSON Response:
-	 *     - success: Boolean indicating the success of the operation.
-	 *     - messages: Array of success messages.
-	 *     - errors: Array of error messages.
-	 *     - overall_stats: An object containing the overall betting statistics.
-	 */
-	case $request_method == 'GET' && $request_URI == '/betting/get_overall_stats':
-		// Get the overall betting stats
-		$overall_stats = $class_betting->get_player_betting_stats_from_ledger($user_hash);
-		if ($overall_stats) {
-			$return_http_response_code = 200;
-			$return_array['success'] = true;
-			$class_main->add_msg("Overall betting stats retrieved successfully");
-			$return_array['overall_stats'] = $overall_stats;
-		} else {
-			$return_http_response_code = 400;
-			$return_array['success'] = false;
-			$class_main->add_error("Overall betting stats retrieval failed", 'error');
-		}
-
-		break;
 
 
 
-
-
-
-
-
-
-
-
-	/**
-	 * API Endpoint: /coinflip/place_bet
-	 *
-	 * Method: POST
-	 *
-	 * Description:
-	 *   Allows a logged-in user to place a bet on a coinflip game.
-	 *
-	 * Request Headers:
-	 *   Authorization: Bearer <user_token> (Optional, but user must be logged in)
-	 *
-	 * Request Body:
-	 *   player_bet_amount_clovers: The amount of clovers the user is betting.
-	 *   player_seed: The player's seed for the bet.
-	 *   player_bet_choice: The player's bet choice ('heads' or 'tails').
-	 *
-	 * Returns:
-	 *   - HTTP Response Code: 200 on success, 400 for bad request, 401 for unauthorized access, 418 for invalid request method.
-	 *   - JSON Response:
-	 *     - success: Boolean indicating the success of the operation.
-	 *     - messages: Array of success messages.
-	 *     - errors: Array of error messages.
-	 *     - outcome: The outcome of the coinflip ('heads' or 'tails').
-	 *     - payout: The payout amount for the bet.
-	 */
-	case $request_method == 'POST' && $request_URI == '/coinflip/place_bet':
-		// Check if required POST parameters are set
-		if (!isset($_POST['player_bet_amount_clovers']) || !isset($_POST['player_seed']) || !isset($_POST['player_bet_choice'])) {
-			$return_http_response_code = 400;
-			$return_array['success'] = false;
-			$class_main->add_error("Missing required parameters: player_bet_amount_clovers, player_seed, player_bet_choice", 'warning');
-			break;
-		}
-
-		// The user must be logged in to place a bet
-		if (!isset($_SESSION['user_hash'])) {
-			$return_http_response_code = 400;
-			$return_array['success'] = false;
-			$class_main->add_error("User not logged in", 'warning');
-			break;
-		}
-
-		// Attempt to place the bet
-		$bet_result = $class_betting_coinflip->place_bet(
-			$_POST['player_bet_amount_clovers'],
-			$_POST['player_seed'],
-			$_POST['player_bet_choice'],
-			$_SESSION['user_hash']
-		);
-
-		if ($bet_result && $bet_result['success']) {
-			$return_http_response_code = 200;
-			$return_array['success'] = true;
-			$class_main->add_msg("Bet placed successfully");
-			$return_array['outcome'] = $bet_result['outcome'];
-			$return_array['payout'] = $bet_result['payout'];
-		} else {
-			$return_http_response_code = 400;
-			$return_array['success'] = false;
-			$class_main->add_error("Bet placement failed", 'warning');
-		}
-		break;
-
-
-
+		// Handle other cases
 	default:
 		$return_http_response_code = 418;
 		$return_array['success'] = false;
