@@ -1,54 +1,17 @@
-CREATE TABLE `log_access` (
-	`id` int(11) NOT NULL AUTO_INCREMENT,
-	`log_uuid` varchar(128) DEFAULT NULL,
-	`requestURI` text NOT NULL,
-	`protocol` varchar(16) DEFAULT NULL COMMENT 'Protocol of request, eg GET/POST/PUT etc',
-	`headers` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`headers`)),
-	`fp_requestID` varchar(255) DEFAULT NULL COMMENT 'Fingerprint request ID',
-	`fp_visitorID` varchar(255) DEFAULT NULL COMMENT 'Fingerprint visitor ID',
-	`timestamp` datetime NOT NULL DEFAULT current_timestamp(),
-	`user_hash` varchar(255) DEFAULT NULL COMMENT 'User hash (if any)',
-	PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-
-CREATE TABLE `log_errors` (
-	`id` int(11) NOT NULL AUTO_INCREMENT,
-	`log_level` varchar(64) DEFAULT 'info' COMMENT 'Log level, ie debug/info/warning/error',
-	`log_uuid` varchar(128) DEFAULT NULL,
-	`log_message` text DEFAULT NULL,
-	`requestURI` text NOT NULL,
-	`script_path` text DEFAULT NULL COMMENT 'Path to the currently executing script',
-	`protocol` varchar(16) DEFAULT NULL COMMENT 'Protocol of request, eg GET/POST/PUT etc',
-	`headers` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`headers`)),
-	`params_GET` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`params_GET`)),
-	`params_POST` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`params_POST`)),
-	`fp_requestID` varchar(255) DEFAULT NULL COMMENT 'Fingerprint request ID',
-	`fp_visitorID` varchar(255) DEFAULT NULL COMMENT 'Fingerprint visitor ID',
-	`timestamp` datetime NOT NULL DEFAULT current_timestamp(),
-	`user_hash` varchar(255) DEFAULT NULL COMMENT 'User hash (if any)',
-	PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-
 CREATE TABLE `users` (
-	`id` int(11) NOT NULL AUTO_INCREMENT,
-	`created_timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
-	`user_hash` varchar(255) NOT NULL,
-	`user_name_first` varchar(255) NOT NULL,
-	`user_name_last` varchar(255) DEFAULT NULL,
-	`user_email` varchar(255) NOT NULL,
-	`user_handle` varchar(128) DEFAULT NULL,
-	`user_gender` varchar(20) DEFAULT NULL COMMENT 'Gender (i.e male / female)',
-	`user_password_hash` varchar(512) NOT NULL,
-	`user_profile_pic_hash` varchar(255) DEFAULT NULL,
-	`user_is_admin` tinyint(1) NOT NULL DEFAULT 0,
-	`user_is_content_creator` tinyint(1) NOT NULL DEFAULT 0,
-	`user_bio_caption` varchar(2048) DEFAULT NULL,
-	`user_permissions` longtext DEFAULT NULL,
-	`user_params` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'User params (eg subscription tiers, VIP levels, close friends, blocklist etc)' CHECK (json_valid(`user_params`)),
-	PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `created_timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
+    `user_hash` varchar(255) NOT NULL,
+    `user_name_first` varchar(255) NOT NULL,
+    `user_name_last` varchar(255) DEFAULT NULL,
+    `user_email` varchar(255) NOT NULL,
+    `user_handle` varchar(128) DEFAULT NULL,
+    `user_password_hash` varchar(512) NOT NULL,
+    `user_is_admin` tinyint(1) NOT NULL DEFAULT '0',
+    `user_permissions` longtext DEFAULT NULL,
+    `user_params` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'User params (eg subscription tiers, VIP levels, close friends, blocklist etc)' CHECK (json_valid(`user_params`)),
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 
 
 CREATE TABLE `users_unverified` (
@@ -116,43 +79,77 @@ CREATE TABLE `wallet_transactions` (
 
 
 
-CREATE TABLE `bets` (
- `id` int(11) NOT NULL AUTO_INCREMENT,
- `bet_hash` varchar(128) DEFAULT NULL,
- `bet_players` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'JSON array of players and their roles' CHECK (json_valid(`bet_players`)),
- `bet_date_created` timestamp NOT NULL DEFAULT current_timestamp(),
- `bet_date_updated` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
- `bet_server_hashes` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'JSON array of per-user unique server hashes' CHECK (json_valid(`bet_server_hashes`)),
- `bet_user_hashes` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'JSON array of per-user unique client side generated hashes' CHECK (json_valid(`bet_user_hashes`)),
- `bet_nonces` varchar(255) DEFAULT NULL COMMENT 'Nonce generated for current bet session',
- `bet_params` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'Any special betting parameters' CHECK (json_valid(`bet_params`)),
- `bet_ledger_log` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`bet_ledger_log`)),
- `bet_amount` float NOT NULL DEFAULT 0,
- `bet_outcomes` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'JSON array of bet outcomes per player' CHECK (json_valid(`bet_outcomes`)),
- `bet_payouts` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'JSON array of bet payouts per player' CHECK (json_valid(`bet_payouts`)),
- `bet_comments` text DEFAULT NULL COMMENT 'bet comments (if any)',
- `bet_game` varchar(255) NOT NULL,
- PRIMARY KEY (`id`)
+CREATE TABLE `api_keys_shippo` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`created_timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
+	`api_key` varchar(512) NOT NULL,
+	`status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1 - active, 0 - inactive',
+	`usage_count` int(11) NOT NULL DEFAULT '0' COMMENT 'Number of times this API key has been used',
+	`last_used` timestamp NULL DEFAULT NULL COMMENT 'Last time this API key was used',
+	PRIMARY KEY (`id`)
+) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+
+CREATE TABLE `labels` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`created_timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
+	`label_hash` varchar(255) NOT NULL,
+	`tracking` varchar(255) NOT NULL,
+	`address_from` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL COMMENT 'JSON object with from address',
+	`address_to` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL COMMENT 'JSON object with to address',
+	`label_courier` varchar(128) NOT NULL,
+	`label_params` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'Label params (JSON object)' CHECK (json_valid(`label_params`)),
+	`label_supplier` varchar(128) NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+
+
+CREATE TABLE `log_access` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`log_uuid` varchar(128) DEFAULT NULL,
+	`requestURI` text NOT NULL,
+	`protocol` varchar(16) DEFAULT NULL COMMENT 'Protocol of request, eg GET/POST/PUT etc',
+	`headers` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`headers`)),
+	`fp_requestID` varchar(255) DEFAULT NULL COMMENT 'Fingerprint request ID',
+	`fp_visitorID` varchar(255) DEFAULT NULL COMMENT 'Fingerprint visitor ID',
+	`timestamp` datetime NOT NULL DEFAULT current_timestamp(),
+	`user_hash` varchar(255) DEFAULT NULL COMMENT 'User hash (if any)',
+	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
+CREATE TABLE `log_errors` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`log_level` varchar(64) DEFAULT 'info' COMMENT 'Log level, ie debug/info/warning/error',
+	`log_uuid` varchar(128) DEFAULT NULL,
+	`log_message` text DEFAULT NULL,
+	`requestURI` text NOT NULL,
+	`script_path` text DEFAULT NULL COMMENT 'Path to the currently executing script',
+	`protocol` varchar(16) DEFAULT NULL COMMENT 'Protocol of request, eg GET/POST/PUT etc',
+	`headers` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`headers`)),
+	`params_GET` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`params_GET`)),
+	`params_POST` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`params_POST`)),
+	`fp_requestID` varchar(255) DEFAULT NULL COMMENT 'Fingerprint request ID',
+	`fp_visitorID` varchar(255) DEFAULT NULL COMMENT 'Fingerprint visitor ID',
+	`timestamp` datetime NOT NULL DEFAULT current_timestamp(),
+	`user_hash` varchar(255) DEFAULT NULL COMMENT 'User hash (if any)',
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
-
-CREATE TABLE `bets_coinflip` (
- `id` int(11) NOT NULL AUTO_INCREMENT,
- `bet_hash` varchar(128) DEFAULT NULL,
- `bet_player_hash` varchar(128) DEFAULT NULL,
- `bet_date_created` timestamp NOT NULL DEFAULT current_timestamp(),
- `bet_date_updated` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
- `bet_server_hash` varchar(128) DEFAULT NULL,
- `bet_user_hash` varchar(128) DEFAULT NULL,
- `bet_nonce` varchar(255) DEFAULT NULL COMMENT 'Nonce generated for current bet session',
- `bet_params` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'Any special betting parameters' CHECK (json_valid(`bet_params`)),
- `bet_ledger_log` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`bet_ledger_log`)),
- `bet_amount` float NOT NULL DEFAULT 0,
- `bet_outcomes` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'JSON array of bet outcomes' CHECK (json_valid(`bet_outcomes`)),
- `bet_payouts` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'JSON array of bet payouts per player' CHECK (json_valid(`bet_payouts`)),
- `bet_comments` text DEFAULT NULL COMMENT 'bet comments (if any)',
- PRIMARY KEY (`id`)
+CREATE TABLE `address_lookup` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `address_hash` varchar(64) NOT NULL,
+  `record_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `record_updated` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `lookup_provider` varchar(50) NOT NULL,
+  `address_line_1` varchar(255) NOT NULL,
+  `address_line_2` varchar(255) DEFAULT NULL,
+  `address_line_3` varchar(255) DEFAULT NULL,
+  `city_locality` varchar(100) NOT NULL,
+  `state_province` varchar(100) NOT NULL,
+  `postal_code` varchar(20) NOT NULL,
+  `country_code` varchar(2) NOT NULL,
+  `address_type` varchar(20) DEFAULT NULL,
+  `lookup_data` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`lookup_data`)),
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
