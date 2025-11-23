@@ -1,0 +1,1545 @@
+[{
+    "name": "Afghanistan",
+    "officialName": "Islamic Republic of Afghanistan",
+    "region": "Asia",
+    "cca2": "AF",
+    "ccn3": "004",
+    "cca3": "AFG",
+    "cioc": "AFG"
+}, {
+    "name": "Angola",
+    "officialName": "Republic of Angola",
+    "region": "Africa",
+    "cca2": "AO",
+    "ccn3": "024",
+    "cca3": "AGO",
+    "cioc": "ANG"
+}, {
+    "name": "Albania",
+    "officialName": "Republic of Albania",
+    "region": "Europe",
+    "cca2": "AL",
+    "ccn3": "008",
+    "cca3": "ALB",
+    "cioc": "ALB"
+}, {
+    "name": "Andorra",
+    "officialName": "Principality of Andorra",
+    "region": "Europe",
+    "cca2": "AD",
+    "ccn3": "020",
+    "cca3": "AND",
+    "cioc": "AND"
+}, {
+    "name": "United Arab Emirates",
+    "officialName": "United Arab Emirates",
+    "region": "Asia",
+    "cca2": "AE",
+    "ccn3": "784",
+    "cca3": "ARE",
+    "cioc": "UAE"
+}, {
+    "name": "Argentina",
+    "officialName": "Argentine Republic",
+    "region": "Americas",
+    "cca2": "AR",
+    "ccn3": "032",
+    "cca3": "ARG",
+    "cioc": "ARG"
+}, {
+    "name": "Armenia",
+    "officialName": "Republic of Armenia",
+    "region": "Asia",
+    "cca2": "AM",
+    "ccn3": "051",
+    "cca3": "ARM",
+    "cioc": "ARM"
+}, {
+    "name": "Antigua and Barbuda",
+    "officialName": "Antigua and Barbuda",
+    "region": "Americas",
+    "cca2": "AG",
+    "ccn3": "028",
+    "cca3": "ATG",
+    "cioc": "ANT"
+}, {
+    "name": "Australia",
+    "officialName": "Commonwealth of Australia",
+    "region": "Oceania",
+    "cca2": "AU",
+    "ccn3": "036",
+    "cca3": "AUS",
+    "cioc": "AUS"
+}, {
+    "name": "Austria",
+    "officialName": "Republic of Austria",
+    "region": "Europe",
+    "cca2": "AT",
+    "ccn3": "040",
+    "cca3": "AUT",
+    "cioc": "AUT"
+}, {
+    "name": "Azerbaijan",
+    "officialName": "Republic of Azerbaijan",
+    "region": "Asia",
+    "cca2": "AZ",
+    "ccn3": "031",
+    "cca3": "AZE",
+    "cioc": "AZE"
+}, {
+    "name": "Burundi",
+    "officialName": "Republic of Burundi",
+    "region": "Africa",
+    "cca2": "BI",
+    "ccn3": "108",
+    "cca3": "BDI",
+    "cioc": "BDI"
+}, {
+    "name": "Belgium",
+    "officialName": "Kingdom of Belgium",
+    "region": "Europe",
+    "cca2": "BE",
+    "ccn3": "056",
+    "cca3": "BEL",
+    "cioc": "BEL"
+}, {
+    "name": "Benin",
+    "officialName": "Republic of Benin",
+    "region": "Africa",
+    "cca2": "BJ",
+    "ccn3": "204",
+    "cca3": "BEN",
+    "cioc": "BEN"
+}, {
+    "name": "Burkina Faso",
+    "officialName": "Burkina Faso",
+    "region": "Africa",
+    "cca2": "BF",
+    "ccn3": "854",
+    "cca3": "BFA",
+    "cioc": "BUR"
+}, {
+    "name": "Bangladesh",
+    "officialName": "People's Republic of Bangladesh",
+    "region": "Asia",
+    "cca2": "BD",
+    "ccn3": "050",
+    "cca3": "BGD",
+    "cioc": "BAN"
+}, {
+    "name": "Bulgaria",
+    "officialName": "Republic of Bulgaria",
+    "region": "Europe",
+    "cca2": "BG",
+    "ccn3": "100",
+    "cca3": "BGR",
+    "cioc": "BUL"
+}, {
+    "name": "Bahrain",
+    "officialName": "Kingdom of Bahrain",
+    "region": "Asia",
+    "cca2": "BH",
+    "ccn3": "048",
+    "cca3": "BHR",
+    "cioc": "BRN"
+}, {
+    "name": "Bahamas",
+    "officialName": "Commonwealth of the Bahamas",
+    "region": "Americas",
+    "cca2": "BS",
+    "ccn3": "044",
+    "cca3": "BHS",
+    "cioc": "BAH"
+}, {
+    "name": "Bosnia and Herzegovina",
+    "officialName": "Bosnia and Herzegovina",
+    "region": "Europe",
+    "cca2": "BA",
+    "ccn3": "070",
+    "cca3": "BIH",
+    "cioc": "BIH"
+}, {
+    "name": "Belarus",
+    "officialName": "Republic of Belarus",
+    "region": "Europe",
+    "cca2": "BY",
+    "ccn3": "112",
+    "cca3": "BLR",
+    "cioc": "BLR"
+}, {
+    "name": "Belize",
+    "officialName": "Belize",
+    "region": "Americas",
+    "cca2": "BZ",
+    "ccn3": "084",
+    "cca3": "BLZ",
+    "cioc": "BIZ"
+}, {
+    "name": "Bolivia",
+    "officialName": "Plurinational State of Bolivia",
+    "region": "Americas",
+    "cca2": "BO",
+    "ccn3": "068",
+    "cca3": "BOL",
+    "cioc": "BOL"
+}, {
+    "name": "Brazil",
+    "officialName": "Federative Republic of Brazil",
+    "region": "Americas",
+    "cca2": "BR",
+    "ccn3": "076",
+    "cca3": "BRA",
+    "cioc": "BRA"
+}, {
+    "name": "Barbados",
+    "officialName": "Barbados",
+    "region": "Americas",
+    "cca2": "BB",
+    "ccn3": "052",
+    "cca3": "BRB",
+    "cioc": "BAR"
+}, {
+    "name": "Brunei",
+    "officialName": "Nation of Brunei, Abode of Peace",
+    "region": "Asia",
+    "cca2": "BN",
+    "ccn3": "096",
+    "cca3": "BRN",
+    "cioc": "BRU"
+}, {
+    "name": "Bhutan",
+    "officialName": "Kingdom of Bhutan",
+    "region": "Asia",
+    "cca2": "BT",
+    "ccn3": "064",
+    "cca3": "BTN",
+    "cioc": "BHU"
+}, {
+    "name": "Botswana",
+    "officialName": "Republic of Botswana",
+    "region": "Africa",
+    "cca2": "BW",
+    "ccn3": "072",
+    "cca3": "BWA",
+    "cioc": "BOT"
+}, {
+    "name": "Central African Republic",
+    "officialName": "Central African Republic",
+    "region": "Africa",
+    "cca2": "CF",
+    "ccn3": "140",
+    "cca3": "CAF",
+    "cioc": "CAF"
+}, {
+    "name": "Canada",
+    "officialName": "Canada",
+    "region": "Americas",
+    "cca2": "CA",
+    "ccn3": "124",
+    "cca3": "CAN",
+    "cioc": "CAN"
+}, {
+    "name": "Switzerland",
+    "officialName": "Swiss Confederation",
+    "region": "Europe",
+    "cca2": "CH",
+    "ccn3": "756",
+    "cca3": "CHE",
+    "cioc": "SUI"
+}, {
+    "name": "Chile",
+    "officialName": "Republic of Chile",
+    "region": "Americas",
+    "cca2": "CL",
+    "ccn3": "152",
+    "cca3": "CHL",
+    "cioc": "CHI"
+}, {
+    "name": "China",
+    "officialName": "People's Republic of China",
+    "region": "Asia",
+    "cca2": "CN",
+    "ccn3": "156",
+    "cca3": "CHN",
+    "cioc": "CHN"
+}, {
+    "name": "Ivory Coast",
+    "officialName": "Republic of Côte d'Ivoire",
+    "region": "Africa",
+    "cca2": "CI",
+    "ccn3": "384",
+    "cca3": "CIV",
+    "cioc": "CIV"
+}, {
+    "name": "Cameroon",
+    "officialName": "Republic of Cameroon",
+    "region": "Africa",
+    "cca2": "CM",
+    "ccn3": "120",
+    "cca3": "CMR",
+    "cioc": "CMR"
+}, {
+    "name": "DR Congo",
+    "officialName": "Democratic Republic of the Congo",
+    "region": "Africa",
+    "cca2": "CD",
+    "ccn3": "180",
+    "cca3": "COD",
+    "cioc": "COD"
+}, {
+    "name": "Republic of the Congo",
+    "officialName": "Republic of the Congo",
+    "region": "Africa",
+    "cca2": "CG",
+    "ccn3": "178",
+    "cca3": "COG",
+    "cioc": "CGO"
+}, {
+    "name": "Colombia",
+    "officialName": "Republic of Colombia",
+    "region": "Americas",
+    "cca2": "CO",
+    "ccn3": "170",
+    "cca3": "COL",
+    "cioc": "COL"
+}, {
+    "name": "Comoros",
+    "officialName": "Union of the Comoros",
+    "region": "Africa",
+    "cca2": "KM",
+    "ccn3": "174",
+    "cca3": "COM",
+    "cioc": "COM"
+}, {
+    "name": "Cape Verde",
+    "officialName": "Republic of Cabo Verde",
+    "region": "Africa",
+    "cca2": "CV",
+    "ccn3": "132",
+    "cca3": "CPV",
+    "cioc": "CPV"
+}, {
+    "name": "Costa Rica",
+    "officialName": "Republic of Costa Rica",
+    "region": "Americas",
+    "cca2": "CR",
+    "ccn3": "188",
+    "cca3": "CRI",
+    "cioc": "CRC"
+}, {
+    "name": "Cuba",
+    "officialName": "Republic of Cuba",
+    "region": "Americas",
+    "cca2": "CU",
+    "ccn3": "192",
+    "cca3": "CUB",
+    "cioc": "CUB"
+}, {
+    "name": "Cyprus",
+    "officialName": "Republic of Cyprus",
+    "region": "Europe",
+    "cca2": "CY",
+    "ccn3": "196",
+    "cca3": "CYP",
+    "cioc": "CYP"
+}, {
+    "name": "Czechia",
+    "officialName": "Czech Republic",
+    "region": "Europe",
+    "cca2": "CZ",
+    "ccn3": "203",
+    "cca3": "CZE",
+    "cioc": "CZE"
+}, {
+    "name": "Germany",
+    "officialName": "Federal Republic of Germany",
+    "region": "Europe",
+    "cca2": "DE",
+    "ccn3": "276",
+    "cca3": "DEU",
+    "cioc": "GER"
+}, {
+    "name": "Djibouti",
+    "officialName": "Republic of Djibouti",
+    "region": "Africa",
+    "cca2": "DJ",
+    "ccn3": "262",
+    "cca3": "DJI",
+    "cioc": "DJI"
+}, {
+    "name": "Dominica",
+    "officialName": "Commonwealth of Dominica",
+    "region": "Americas",
+    "cca2": "DM",
+    "ccn3": "212",
+    "cca3": "DMA",
+    "cioc": "DMA"
+}, {
+    "name": "Denmark",
+    "officialName": "Kingdom of Denmark",
+    "region": "Europe",
+    "cca2": "DK",
+    "ccn3": "208",
+    "cca3": "DNK",
+    "cioc": "DEN"
+}, {
+    "name": "Dominican Republic",
+    "officialName": "Dominican Republic",
+    "region": "Americas",
+    "cca2": "DO",
+    "ccn3": "214",
+    "cca3": "DOM",
+    "cioc": "DOM"
+}, {
+    "name": "Algeria",
+    "officialName": "People's Democratic Republic of Algeria",
+    "region": "Africa",
+    "cca2": "DZ",
+    "ccn3": "012",
+    "cca3": "DZA",
+    "cioc": "ALG"
+}, {
+    "name": "Ecuador",
+    "officialName": "Republic of Ecuador",
+    "region": "Americas",
+    "cca2": "EC",
+    "ccn3": "218",
+    "cca3": "ECU",
+    "cioc": "ECU"
+}, {
+    "name": "Egypt",
+    "officialName": "Arab Republic of Egypt",
+    "region": "Africa",
+    "cca2": "EG",
+    "ccn3": "818",
+    "cca3": "EGY",
+    "cioc": "EGY"
+}, {
+    "name": "Eritrea",
+    "officialName": "State of Eritrea",
+    "region": "Africa",
+    "cca2": "ER",
+    "ccn3": "232",
+    "cca3": "ERI",
+    "cioc": "ERI"
+}, {
+    "name": "Spain",
+    "officialName": "Kingdom of Spain",
+    "region": "Europe",
+    "cca2": "ES",
+    "ccn3": "724",
+    "cca3": "ESP",
+    "cioc": "ESP"
+}, {
+    "name": "Estonia",
+    "officialName": "Republic of Estonia",
+    "region": "Europe",
+    "cca2": "EE",
+    "ccn3": "233",
+    "cca3": "EST",
+    "cioc": "EST"
+}, {
+    "name": "Ethiopia",
+    "officialName": "Federal Democratic Republic of Ethiopia",
+    "region": "Africa",
+    "cca2": "ET",
+    "ccn3": "231",
+    "cca3": "ETH",
+    "cioc": "ETH"
+}, {
+    "name": "Finland",
+    "officialName": "Republic of Finland",
+    "region": "Europe",
+    "cca2": "FI",
+    "ccn3": "246",
+    "cca3": "FIN",
+    "cioc": "FIN"
+}, {
+    "name": "Fiji",
+    "officialName": "Republic of Fiji",
+    "region": "Oceania",
+    "cca2": "FJ",
+    "ccn3": "242",
+    "cca3": "FJI",
+    "cioc": "FIJ"
+}, {
+    "name": "France",
+    "officialName": "French Republic",
+    "region": "Europe",
+    "cca2": "FR",
+    "ccn3": "250",
+    "cca3": "FRA",
+    "cioc": "FRA"
+}, {
+    "name": "Micronesia",
+    "officialName": "Federated States of Micronesia",
+    "region": "Oceania",
+    "cca2": "FM",
+    "ccn3": "583",
+    "cca3": "FSM",
+    "cioc": "FSM"
+}, {
+    "name": "Gabon",
+    "officialName": "Gabonese Republic",
+    "region": "Africa",
+    "cca2": "GA",
+    "ccn3": "266",
+    "cca3": "GAB",
+    "cioc": "GAB"
+}, {
+    "name": "United Kingdom",
+    "officialName": "United Kingdom of Great Britain and Northern Ireland",
+    "region": "Europe",
+    "cca2": "GB",
+    "ccn3": "826",
+    "cca3": "GBR",
+    "cioc": "GBR"
+}, {
+    "name": "Georgia",
+    "officialName": "Georgia",
+    "region": "Asia",
+    "cca2": "GE",
+    "ccn3": "268",
+    "cca3": "GEO",
+    "cioc": "GEO"
+}, {
+    "name": "Ghana",
+    "officialName": "Republic of Ghana",
+    "region": "Africa",
+    "cca2": "GH",
+    "ccn3": "288",
+    "cca3": "GHA",
+    "cioc": "GHA"
+}, {
+    "name": "Guinea",
+    "officialName": "Republic of Guinea",
+    "region": "Africa",
+    "cca2": "GN",
+    "ccn3": "324",
+    "cca3": "GIN",
+    "cioc": "GUI"
+}, {
+    "name": "Gambia",
+    "officialName": "Republic of the Gambia",
+    "region": "Africa",
+    "cca2": "GM",
+    "ccn3": "270",
+    "cca3": "GMB",
+    "cioc": "GAM"
+}, {
+    "name": "Equatorial Guinea",
+    "officialName": "Republic of Equatorial Guinea",
+    "region": "Africa",
+    "cca2": "GQ",
+    "ccn3": "226",
+    "cca3": "GNQ",
+    "cioc": "GEQ"
+}, {
+    "name": "Greece",
+    "officialName": "Hellenic Republic",
+    "region": "Europe",
+    "cca2": "GR",
+    "ccn3": "300",
+    "cca3": "GRC",
+    "cioc": "GRE"
+}, {
+    "name": "Grenada",
+    "officialName": "Grenada",
+    "region": "Americas",
+    "cca2": "GD",
+    "ccn3": "308",
+    "cca3": "GRD",
+    "cioc": "GRN"
+}, {
+    "name": "Guatemala",
+    "officialName": "Republic of Guatemala",
+    "region": "Americas",
+    "cca2": "GT",
+    "ccn3": "320",
+    "cca3": "GTM",
+    "cioc": "GUA"
+}, {
+    "name": "Guyana",
+    "officialName": "Co-operative Republic of Guyana",
+    "region": "Americas",
+    "cca2": "GY",
+    "ccn3": "328",
+    "cca3": "GUY",
+    "cioc": "GUY"
+}, {
+    "name": "Honduras",
+    "officialName": "Republic of Honduras",
+    "region": "Americas",
+    "cca2": "HN",
+    "ccn3": "340",
+    "cca3": "HND",
+    "cioc": "HON"
+}, {
+    "name": "Croatia",
+    "officialName": "Republic of Croatia",
+    "region": "Europe",
+    "cca2": "HR",
+    "ccn3": "191",
+    "cca3": "HRV",
+    "cioc": "CRO"
+}, {
+    "name": "Haiti",
+    "officialName": "Republic of Haiti",
+    "region": "Americas",
+    "cca2": "HT",
+    "ccn3": "332",
+    "cca3": "HTI",
+    "cioc": "HAI"
+}, {
+    "name": "Hungary",
+    "officialName": "Hungary",
+    "region": "Europe",
+    "cca2": "HU",
+    "ccn3": "348",
+    "cca3": "HUN",
+    "cioc": "HUN"
+}, {
+    "name": "Indonesia",
+    "officialName": "Republic of Indonesia",
+    "region": "Asia",
+    "cca2": "ID",
+    "ccn3": "360",
+    "cca3": "IDN",
+    "cioc": "INA"
+}, {
+    "name": "India",
+    "officialName": "Republic of India",
+    "region": "Asia",
+    "cca2": "IN",
+    "ccn3": "356",
+    "cca3": "IND",
+    "cioc": "IND"
+}, {
+    "name": "Ireland",
+    "officialName": "Republic of Ireland",
+    "region": "Europe",
+    "cca2": "IE",
+    "ccn3": "372",
+    "cca3": "IRL",
+    "cioc": "IRL"
+}, {
+    "name": "Iran",
+    "officialName": "Islamic Republic of Iran",
+    "region": "Asia",
+    "cca2": "IR",
+    "ccn3": "364",
+    "cca3": "IRN",
+    "cioc": "IRI"
+}, {
+    "name": "Iraq",
+    "officialName": "Republic of Iraq",
+    "region": "Asia",
+    "cca2": "IQ",
+    "ccn3": "368",
+    "cca3": "IRQ",
+    "cioc": "IRQ"
+}, {
+    "name": "Iceland",
+    "officialName": "Iceland",
+    "region": "Europe",
+    "cca2": "IS",
+    "ccn3": "352",
+    "cca3": "ISL",
+    "cioc": "ISL"
+}, {
+    "name": "Israel",
+    "officialName": "State of Israel",
+    "region": "Asia",
+    "cca2": "IL",
+    "ccn3": "376",
+    "cca3": "ISR",
+    "cioc": "ISR"
+}, {
+    "name": "Italy",
+    "officialName": "Italian Republic",
+    "region": "Europe",
+    "cca2": "IT",
+    "ccn3": "380",
+    "cca3": "ITA",
+    "cioc": "ITA"
+}, {
+    "name": "Jamaica",
+    "officialName": "Jamaica",
+    "region": "Americas",
+    "cca2": "JM",
+    "ccn3": "388",
+    "cca3": "JAM",
+    "cioc": "JAM"
+}, {
+    "name": "Jordan",
+    "officialName": "Hashemite Kingdom of Jordan",
+    "region": "Asia",
+    "cca2": "JO",
+    "ccn3": "400",
+    "cca3": "JOR",
+    "cioc": "JOR"
+}, {
+    "name": "Japan",
+    "officialName": "Japan",
+    "region": "Asia",
+    "cca2": "JP",
+    "ccn3": "392",
+    "cca3": "JPN",
+    "cioc": "JPN"
+}, {
+    "name": "Kazakhstan",
+    "officialName": "Republic of Kazakhstan",
+    "region": "Asia",
+    "cca2": "KZ",
+    "ccn3": "398",
+    "cca3": "KAZ",
+    "cioc": "KAZ"
+}, {
+    "name": "Kenya",
+    "officialName": "Republic of Kenya",
+    "region": "Africa",
+    "cca2": "KE",
+    "ccn3": "404",
+    "cca3": "KEN",
+    "cioc": "KEN"
+}, {
+    "name": "Kyrgyzstan",
+    "officialName": "Kyrgyz Republic",
+    "region": "Asia",
+    "cca2": "KG",
+    "ccn3": "417",
+    "cca3": "KGZ",
+    "cioc": "KGZ"
+}, {
+    "name": "Cambodia",
+    "officialName": "Kingdom of Cambodia",
+    "region": "Asia",
+    "cca2": "KH",
+    "ccn3": "116",
+    "cca3": "KHM",
+    "cioc": "CAM"
+}, {
+    "name": "Kiribati",
+    "officialName": "Independent and Sovereign Republic of Kiribati",
+    "region": "Oceania",
+    "cca2": "KI",
+    "ccn3": "296",
+    "cca3": "KIR",
+    "cioc": "KIR"
+}, {
+    "name": "Saint Kitts and Nevis",
+    "officialName": "Federation of Saint Christopher and Nevis",
+    "region": "Americas",
+    "cca2": "KN",
+    "ccn3": "659",
+    "cca3": "KNA",
+    "cioc": "SKN"
+}, {
+    "name": "South Korea",
+    "officialName": "Republic of Korea",
+    "region": "Asia",
+    "cca2": "KR",
+    "ccn3": "410",
+    "cca3": "KOR",
+    "cioc": "KOR"
+}, {
+    "name": "Kuwait",
+    "officialName": "State of Kuwait",
+    "region": "Asia",
+    "cca2": "KW",
+    "ccn3": "414",
+    "cca3": "KWT",
+    "cioc": "KUW"
+}, {
+    "name": "Laos",
+    "officialName": "Lao People's Democratic Republic",
+    "region": "Asia",
+    "cca2": "LA",
+    "ccn3": "418",
+    "cca3": "LAO",
+    "cioc": "LAO"
+}, {
+    "name": "Lebanon",
+    "officialName": "Lebanese Republic",
+    "region": "Asia",
+    "cca2": "LB",
+    "ccn3": "422",
+    "cca3": "LBN",
+    "cioc": "LIB"
+}, {
+    "name": "Liberia",
+    "officialName": "Republic of Liberia",
+    "region": "Africa",
+    "cca2": "LR",
+    "ccn3": "430",
+    "cca3": "LBR",
+    "cioc": "LBR"
+}, {
+    "name": "Libya",
+    "officialName": "State of Libya",
+    "region": "Africa",
+    "cca2": "LY",
+    "ccn3": "434",
+    "cca3": "LBY",
+    "cioc": "LBA"
+}, {
+    "name": "Saint Lucia",
+    "officialName": "Saint Lucia",
+    "region": "Americas",
+    "cca2": "LC",
+    "ccn3": "662",
+    "cca3": "LCA",
+    "cioc": "LCA"
+}, {
+    "name": "Liechtenstein",
+    "officialName": "Principality of Liechtenstein",
+    "region": "Europe",
+    "cca2": "LI",
+    "ccn3": "438",
+    "cca3": "LIE",
+    "cioc": "LIE"
+}, {
+    "name": "Sri Lanka",
+    "officialName": "Democratic Socialist Republic of Sri Lanka",
+    "region": "Asia",
+    "cca2": "LK",
+    "ccn3": "144",
+    "cca3": "LKA",
+    "cioc": "SRI"
+}, {
+    "name": "Lesotho",
+    "officialName": "Kingdom of Lesotho",
+    "region": "Africa",
+    "cca2": "LS",
+    "ccn3": "426",
+    "cca3": "LSO",
+    "cioc": "LES"
+}, {
+    "name": "Lithuania",
+    "officialName": "Republic of Lithuania",
+    "region": "Europe",
+    "cca2": "LT",
+    "ccn3": "440",
+    "cca3": "LTU",
+    "cioc": "LTU"
+}, {
+    "name": "Luxembourg",
+    "officialName": "Grand Duchy of Luxembourg",
+    "region": "Europe",
+    "cca2": "LU",
+    "ccn3": "442",
+    "cca3": "LUX",
+    "cioc": "LUX"
+}, {
+    "name": "Latvia",
+    "officialName": "Republic of Latvia",
+    "region": "Europe",
+    "cca2": "LV",
+    "ccn3": "428",
+    "cca3": "LVA",
+    "cioc": "LAT"
+}, {
+    "name": "Morocco",
+    "officialName": "Kingdom of Morocco",
+    "region": "Africa",
+    "cca2": "MA",
+    "ccn3": "504",
+    "cca3": "MAR",
+    "cioc": "MAR"
+}, {
+    "name": "Monaco",
+    "officialName": "Principality of Monaco",
+    "region": "Europe",
+    "cca2": "MC",
+    "ccn3": "492",
+    "cca3": "MCO",
+    "cioc": "MON"
+}, {
+    "name": "Moldova",
+    "officialName": "Republic of Moldova",
+    "region": "Europe",
+    "cca2": "MD",
+    "ccn3": "498",
+    "cca3": "MDA",
+    "cioc": "MDA"
+}, {
+    "name": "Madagascar",
+    "officialName": "Republic of Madagascar",
+    "region": "Africa",
+    "cca2": "MG",
+    "ccn3": "450",
+    "cca3": "MDG",
+    "cioc": "MAD"
+}, {
+    "name": "Maldives",
+    "officialName": "Republic of the Maldives",
+    "region": "Asia",
+    "cca2": "MV",
+    "ccn3": "462",
+    "cca3": "MDV",
+    "cioc": "MDV"
+}, {
+    "name": "Mexico",
+    "officialName": "United Mexican States",
+    "region": "Americas",
+    "cca2": "MX",
+    "ccn3": "484",
+    "cca3": "MEX",
+    "cioc": "MEX"
+}, {
+    "name": "Marshall Islands",
+    "officialName": "Republic of the Marshall Islands",
+    "region": "Oceania",
+    "cca2": "MH",
+    "ccn3": "584",
+    "cca3": "MHL",
+    "cioc": "MHL"
+}, {
+    "name": "North Macedonia",
+    "officialName": "Republic of North Macedonia",
+    "region": "Europe",
+    "cca2": "MK",
+    "ccn3": "807",
+    "cca3": "MKD",
+    "cioc": "MKD"
+}, {
+    "name": "Mali",
+    "officialName": "Republic of Mali",
+    "region": "Africa",
+    "cca2": "ML",
+    "ccn3": "466",
+    "cca3": "MLI",
+    "cioc": "MLI"
+}, {
+    "name": "Malta",
+    "officialName": "Republic of Malta",
+    "region": "Europe",
+    "cca2": "MT",
+    "ccn3": "470",
+    "cca3": "MLT",
+    "cioc": "MLT"
+}, {
+    "name": "Myanmar",
+    "officialName": "Republic of the Union of Myanmar",
+    "region": "Asia",
+    "cca2": "MM",
+    "ccn3": "104",
+    "cca3": "MMR",
+    "cioc": "MYA"
+}, {
+    "name": "Montenegro",
+    "officialName": "Montenegro",
+    "region": "Europe",
+    "cca2": "ME",
+    "ccn3": "499",
+    "cca3": "MNE",
+    "cioc": "MNE"
+}, {
+    "name": "Mongolia",
+    "officialName": "Mongolia",
+    "region": "Asia",
+    "cca2": "MN",
+    "ccn3": "496",
+    "cca3": "MNG",
+    "cioc": "MGL"
+}, {
+    "name": "Mozambique",
+    "officialName": "Republic of Mozambique",
+    "region": "Africa",
+    "cca2": "MZ",
+    "ccn3": "508",
+    "cca3": "MOZ",
+    "cioc": "MOZ"
+}, {
+    "name": "Mauritania",
+    "officialName": "Islamic Republic of Mauritania",
+    "region": "Africa",
+    "cca2": "MR",
+    "ccn3": "478",
+    "cca3": "MRT",
+    "cioc": "MTN"
+}, {
+    "name": "Mauritius",
+    "officialName": "Republic of Mauritius",
+    "region": "Africa",
+    "cca2": "MU",
+    "ccn3": "480",
+    "cca3": "MUS",
+    "cioc": "MRI"
+}, {
+    "name": "Malawi",
+    "officialName": "Republic of Malawi",
+    "region": "Africa",
+    "cca2": "MW",
+    "ccn3": "454",
+    "cca3": "MWI",
+    "cioc": "MAW"
+}, {
+    "name": "Malaysia",
+    "officialName": "Malaysia",
+    "region": "Asia",
+    "cca2": "MY",
+    "ccn3": "458",
+    "cca3": "MYS",
+    "cioc": "MAS"
+}, {
+    "name": "Namibia",
+    "officialName": "Republic of Namibia",
+    "region": "Africa",
+    "cca2": "NA",
+    "ccn3": "516",
+    "cca3": "NAM",
+    "cioc": "NAM"
+}, {
+    "name": "Niger",
+    "officialName": "Republic of Niger",
+    "region": "Africa",
+    "cca2": "NE",
+    "ccn3": "562",
+    "cca3": "NER",
+    "cioc": "NIG"
+}, {
+    "name": "Nigeria",
+    "officialName": "Federal Republic of Nigeria",
+    "region": "Africa",
+    "cca2": "NG",
+    "ccn3": "566",
+    "cca3": "NGA",
+    "cioc": "NGR"
+}, {
+    "name": "Nicaragua",
+    "officialName": "Republic of Nicaragua",
+    "region": "Americas",
+    "cca2": "NI",
+    "ccn3": "558",
+    "cca3": "NIC",
+    "cioc": "NCA"
+}, {
+    "name": "Netherlands",
+    "officialName": "Kingdom of the Netherlands",
+    "region": "Europe",
+    "cca2": "NL",
+    "ccn3": "528",
+    "cca3": "NLD",
+    "cioc": "NED"
+}, {
+    "name": "Norway",
+    "officialName": "Kingdom of Norway",
+    "region": "Europe",
+    "cca2": "NO",
+    "ccn3": "578",
+    "cca3": "NOR",
+    "cioc": "NOR"
+}, {
+    "name": "Nepal",
+    "officialName": "Federal Democratic Republic of Nepal",
+    "region": "Asia",
+    "cca2": "NP",
+    "ccn3": "524",
+    "cca3": "NPL",
+    "cioc": "NEP"
+}, {
+    "name": "Nauru",
+    "officialName": "Republic of Nauru",
+    "region": "Oceania",
+    "cca2": "NR",
+    "ccn3": "520",
+    "cca3": "NRU",
+    "cioc": "NRU"
+}, {
+    "name": "New Zealand",
+    "officialName": "New Zealand",
+    "region": "Oceania",
+    "cca2": "NZ",
+    "ccn3": "554",
+    "cca3": "NZL",
+    "cioc": "NZL"
+}, {
+    "name": "Oman",
+    "officialName": "Sultanate of Oman",
+    "region": "Asia",
+    "cca2": "OM",
+    "ccn3": "512",
+    "cca3": "OMN",
+    "cioc": "OMA"
+}, {
+    "name": "Pakistan",
+    "officialName": "Islamic Republic of Pakistan",
+    "region": "Asia",
+    "cca2": "PK",
+    "ccn3": "586",
+    "cca3": "PAK",
+    "cioc": "PAK"
+}, {
+    "name": "Panama",
+    "officialName": "Republic of Panama",
+    "region": "Americas",
+    "cca2": "PA",
+    "ccn3": "591",
+    "cca3": "PAN",
+    "cioc": "PAN"
+}, {
+    "name": "Peru",
+    "officialName": "Republic of Peru",
+    "region": "Americas",
+    "cca2": "PE",
+    "ccn3": "604",
+    "cca3": "PER",
+    "cioc": "PER"
+}, {
+    "name": "Philippines",
+    "officialName": "Republic of the Philippines",
+    "region": "Asia",
+    "cca2": "PH",
+    "ccn3": "608",
+    "cca3": "PHL",
+    "cioc": "PHI"
+}, {
+    "name": "Palau",
+    "officialName": "Republic of Palau",
+    "region": "Oceania",
+    "cca2": "PW",
+    "ccn3": "585",
+    "cca3": "PLW",
+    "cioc": "PLW"
+}, {
+    "name": "Papua New Guinea",
+    "officialName": "Independent State of Papua New Guinea",
+    "region": "Oceania",
+    "cca2": "PG",
+    "ccn3": "598",
+    "cca3": "PNG",
+    "cioc": "PNG"
+}, {
+    "name": "Poland",
+    "officialName": "Republic of Poland",
+    "region": "Europe",
+    "cca2": "PL",
+    "ccn3": "616",
+    "cca3": "POL",
+    "cioc": "POL"
+}, {
+    "name": "North Korea",
+    "officialName": "Democratic People's Republic of Korea",
+    "region": "Asia",
+    "cca2": "KP",
+    "ccn3": "408",
+    "cca3": "PRK",
+    "cioc": "PRK"
+}, {
+    "name": "Portugal",
+    "officialName": "Portuguese Republic",
+    "region": "Europe",
+    "cca2": "PT",
+    "ccn3": "620",
+    "cca3": "PRT",
+    "cioc": "POR"
+}, {
+    "name": "Paraguay",
+    "officialName": "Republic of Paraguay",
+    "region": "Americas",
+    "cca2": "PY",
+    "ccn3": "600",
+    "cca3": "PRY",
+    "cioc": "PAR"
+}, {
+    "name": "Qatar",
+    "officialName": "State of Qatar",
+    "region": "Asia",
+    "cca2": "QA",
+    "ccn3": "634",
+    "cca3": "QAT",
+    "cioc": "QAT"
+}, {
+    "name": "Romania",
+    "officialName": "Romania",
+    "region": "Europe",
+    "cca2": "RO",
+    "ccn3": "642",
+    "cca3": "ROU",
+    "cioc": "ROU"
+}, {
+    "name": "Russia",
+    "officialName": "Russian Federation",
+    "region": "Europe",
+    "cca2": "RU",
+    "ccn3": "643",
+    "cca3": "RUS",
+    "cioc": "RUS"
+}, {
+    "name": "Rwanda",
+    "officialName": "Republic of Rwanda",
+    "region": "Africa",
+    "cca2": "RW",
+    "ccn3": "646",
+    "cca3": "RWA",
+    "cioc": "RWA"
+}, {
+    "name": "Saudi Arabia",
+    "officialName": "Kingdom of Saudi Arabia",
+    "region": "Asia",
+    "cca2": "SA",
+    "ccn3": "682",
+    "cca3": "SAU",
+    "cioc": "KSA"
+}, {
+    "name": "Sudan",
+    "officialName": "Republic of the Sudan",
+    "region": "Africa",
+    "cca2": "SD",
+    "ccn3": "729",
+    "cca3": "SDN",
+    "cioc": "SUD"
+}, {
+    "name": "Senegal",
+    "officialName": "Republic of Senegal",
+    "region": "Africa",
+    "cca2": "SN",
+    "ccn3": "686",
+    "cca3": "SEN",
+    "cioc": "SEN"
+}, {
+    "name": "Singapore",
+    "officialName": "Republic of Singapore",
+    "region": "Asia",
+    "cca2": "SG",
+    "ccn3": "702",
+    "cca3": "SGP",
+    "cioc": "SIN"
+}, {
+    "name": "Solomon Islands",
+    "officialName": "Solomon Islands",
+    "region": "Oceania",
+    "cca2": "SB",
+    "ccn3": "090",
+    "cca3": "SLB",
+    "cioc": "SOL"
+}, {
+    "name": "Sierra Leone",
+    "officialName": "Republic of Sierra Leone",
+    "region": "Africa",
+    "cca2": "SL",
+    "ccn3": "694",
+    "cca3": "SLE",
+    "cioc": "SLE"
+}, {
+    "name": "El Salvador",
+    "officialName": "Republic of El Salvador",
+    "region": "Americas",
+    "cca2": "SV",
+    "ccn3": "222",
+    "cca3": "SLV",
+    "cioc": "ESA"
+}, {
+    "name": "San Marino",
+    "officialName": "Most Serene Republic of San Marino",
+    "region": "Europe",
+    "cca2": "SM",
+    "ccn3": "674",
+    "cca3": "SMR",
+    "cioc": "SMR"
+}, {
+    "name": "Somalia",
+    "officialName": "Federal Republic of Somalia",
+    "region": "Africa",
+    "cca2": "SO",
+    "ccn3": "706",
+    "cca3": "SOM",
+    "cioc": "SOM"
+}, {
+    "name": "Serbia",
+    "officialName": "Republic of Serbia",
+    "region": "Europe",
+    "cca2": "RS",
+    "ccn3": "688",
+    "cca3": "SRB",
+    "cioc": "SRB"
+}, {
+    "name": "South Sudan",
+    "officialName": "Republic of South Sudan",
+    "region": "Africa",
+    "cca2": "SS",
+    "ccn3": "728",
+    "cca3": "SSD",
+    "cioc": ""
+}, {
+    "name": "São Tomé and Príncipe",
+    "officialName": "Democratic Republic of São Tomé and Príncipe",
+    "region": "Africa",
+    "cca2": "ST",
+    "ccn3": "678",
+    "cca3": "STP",
+    "cioc": "STP"
+}, {
+    "name": "Suriname",
+    "officialName": "Republic of Suriname",
+    "region": "Americas",
+    "cca2": "SR",
+    "ccn3": "740",
+    "cca3": "SUR",
+    "cioc": "SUR"
+}, {
+    "name": "Slovakia",
+    "officialName": "Slovak Republic",
+    "region": "Europe",
+    "cca2": "SK",
+    "ccn3": "703",
+    "cca3": "SVK",
+    "cioc": "SVK"
+}, {
+    "name": "Slovenia",
+    "officialName": "Republic of Slovenia",
+    "region": "Europe",
+    "cca2": "SI",
+    "ccn3": "705",
+    "cca3": "SVN",
+    "cioc": "SLO"
+}, {
+    "name": "Sweden",
+    "officialName": "Kingdom of Sweden",
+    "region": "Europe",
+    "cca2": "SE",
+    "ccn3": "752",
+    "cca3": "SWE",
+    "cioc": "SWE"
+}, {
+    "name": "Eswatini",
+    "officialName": "Kingdom of Eswatini",
+    "region": "Africa",
+    "cca2": "SZ",
+    "ccn3": "748",
+    "cca3": "SWZ",
+    "cioc": "SWZ"
+}, {
+    "name": "Seychelles",
+    "officialName": "Republic of Seychelles",
+    "region": "Africa",
+    "cca2": "SC",
+    "ccn3": "690",
+    "cca3": "SYC",
+    "cioc": "SEY"
+}, {
+    "name": "Syria",
+    "officialName": "Syrian Arab Republic",
+    "region": "Asia",
+    "cca2": "SY",
+    "ccn3": "760",
+    "cca3": "SYR",
+    "cioc": "SYR"
+}, {
+    "name": "Chad",
+    "officialName": "Republic of Chad",
+    "region": "Africa",
+    "cca2": "TD",
+    "ccn3": "148",
+    "cca3": "TCD",
+    "cioc": "CHA"
+}, {
+    "name": "Togo",
+    "officialName": "Togolese Republic",
+    "region": "Africa",
+    "cca2": "TG",
+    "ccn3": "768",
+    "cca3": "TGO",
+    "cioc": "TOG"
+}, {
+    "name": "Thailand",
+    "officialName": "Kingdom of Thailand",
+    "region": "Asia",
+    "cca2": "TH",
+    "ccn3": "764",
+    "cca3": "THA",
+    "cioc": "THA"
+}, {
+    "name": "Tajikistan",
+    "officialName": "Republic of Tajikistan",
+    "region": "Asia",
+    "cca2": "TJ",
+    "ccn3": "762",
+    "cca3": "TJK",
+    "cioc": "TJK"
+}, {
+    "name": "Turkmenistan",
+    "officialName": "Turkmenistan",
+    "region": "Asia",
+    "cca2": "TM",
+    "ccn3": "795",
+    "cca3": "TKM",
+    "cioc": "TKM"
+}, {
+    "name": "Timor-Leste",
+    "officialName": "Democratic Republic of Timor-Leste",
+    "region": "Asia",
+    "cca2": "TL",
+    "ccn3": "626",
+    "cca3": "TLS",
+    "cioc": "TLS"
+}, {
+    "name": "Tonga",
+    "officialName": "Kingdom of Tonga",
+    "region": "Oceania",
+    "cca2": "TO",
+    "ccn3": "776",
+    "cca3": "TON",
+    "cioc": "TGA"
+}, {
+    "name": "Trinidad and Tobago",
+    "officialName": "Republic of Trinidad and Tobago",
+    "region": "Americas",
+    "cca2": "TT",
+    "ccn3": "780",
+    "cca3": "TTO",
+    "cioc": "TTO"
+}, {
+    "name": "Tunisia",
+    "officialName": "Tunisian Republic",
+    "region": "Africa",
+    "cca2": "TN",
+    "ccn3": "788",
+    "cca3": "TUN",
+    "cioc": "TUN"
+}, {
+    "name": "Turkey",
+    "officialName": "Republic of Turkey",
+    "region": "Asia",
+    "cca2": "TR",
+    "ccn3": "792",
+    "cca3": "TUR",
+    "cioc": "TUR"
+}, {
+    "name": "Tuvalu",
+    "officialName": "Tuvalu",
+    "region": "Oceania",
+    "cca2": "TV",
+    "ccn3": "798",
+    "cca3": "TUV",
+    "cioc": "TUV"
+}, {
+    "name": "Tanzania",
+    "officialName": "United Republic of Tanzania",
+    "region": "Africa",
+    "cca2": "TZ",
+    "ccn3": "834",
+    "cca3": "TZA",
+    "cioc": "TAN"
+}, {
+    "name": "Uganda",
+    "officialName": "Republic of Uganda",
+    "region": "Africa",
+    "cca2": "UG",
+    "ccn3": "800",
+    "cca3": "UGA",
+    "cioc": "UGA"
+}, {
+    "name": "Ukraine",
+    "officialName": "Ukraine",
+    "region": "Europe",
+    "cca2": "UA",
+    "ccn3": "804",
+    "cca3": "UKR",
+    "cioc": "UKR"
+}, {
+    "name": "Uruguay",
+    "officialName": "Oriental Republic of Uruguay",
+    "region": "Americas",
+    "cca2": "UY",
+    "ccn3": "858",
+    "cca3": "URY",
+    "cioc": "URU"
+}, {
+    "name": "United States",
+    "officialName": "United States of America",
+    "region": "Americas",
+    "cca2": "US",
+    "ccn3": "840",
+    "cca3": "USA",
+    "cioc": "USA"
+}, {
+    "name": "Uzbekistan",
+    "officialName": "Republic of Uzbekistan",
+    "region": "Asia",
+    "cca2": "UZ",
+    "ccn3": "860",
+    "cca3": "UZB",
+    "cioc": "UZB"
+}, {
+    "name": "Vatican City",
+    "officialName": "Vatican City State",
+    "region": "Europe",
+    "cca2": "VA",
+    "ccn3": "336",
+    "cca3": "VAT",
+    "cioc": ""
+}, {
+    "name": "Saint Vincent and the Grenadines",
+    "officialName": "Saint Vincent and the Grenadines",
+    "region": "Americas",
+    "cca2": "VC",
+    "ccn3": "670",
+    "cca3": "VCT",
+    "cioc": "VIN"
+}, {
+    "name": "Venezuela",
+    "officialName": "Bolivarian Republic of Venezuela",
+    "region": "Americas",
+    "cca2": "VE",
+    "ccn3": "862",
+    "cca3": "VEN",
+    "cioc": "VEN"
+}, {
+    "name": "Vietnam",
+    "officialName": "Socialist Republic of Vietnam",
+    "region": "Asia",
+    "cca2": "VN",
+    "ccn3": "704",
+    "cca3": "VNM",
+    "cioc": "VIE"
+}, {
+    "name": "Vanuatu",
+    "officialName": "Republic of Vanuatu",
+    "region": "Oceania",
+    "cca2": "VU",
+    "ccn3": "548",
+    "cca3": "VUT",
+    "cioc": "VAN"
+}, {
+    "name": "Samoa",
+    "officialName": "Independent State of Samoa",
+    "region": "Oceania",
+    "cca2": "WS",
+    "ccn3": "882",
+    "cca3": "WSM",
+    "cioc": "SAM"
+}, {
+    "name": "Yemen",
+    "officialName": "Republic of Yemen",
+    "region": "Asia",
+    "cca2": "YE",
+    "ccn3": "887",
+    "cca3": "YEM",
+    "cioc": "YEM"
+}, {
+    "name": "South Africa",
+    "officialName": "Republic of South Africa",
+    "region": "Africa",
+    "cca2": "ZA",
+    "ccn3": "710",
+    "cca3": "ZAF",
+    "cioc": "RSA"
+}, {
+    "name": "Zambia",
+    "officialName": "Republic of Zambia",
+    "region": "Africa",
+    "cca2": "ZM",
+    "ccn3": "894",
+    "cca3": "ZMB",
+    "cioc": "ZAM"
+}, {
+    "name": "Zimbabwe",
+    "officialName": "Republic of Zimbabwe",
+    "region": "Africa",
+    "cca2": "ZW",
+    "ccn3": "716",
+    "cca3": "ZWE",
+    "cioc": "ZIM"
+}]

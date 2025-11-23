@@ -316,8 +316,8 @@ class class_auth extends class_main {
 			$mg = Mailgun::create(MAILGUN_API_KEY);
 
 			try {
-				$mg->messages()->send('mail.clovers.bet', [
-					'from'    => 'noreply@mail.clovers.bet',
+				$mg->messages()->send('mail.instaship.org', [
+					'from'    => 'noreply@mail.instaship.org',
 					'to'      => $email_to,
 					'subject' => $email_subject,
 					'text'    => $email_txt,

@@ -14,7 +14,7 @@ CREATE TABLE `wallet_topups` (
  `txn-hash_user` varchar(128) DEFAULT NULL COMMENT 'User hash attributed to the transaction',
  `txn-status` varchar(255) NOT NULL,
  `txn-status_text` mediumtext NOT NULL,
- `txn-amt_clovers` float NOT NULL DEFAULT 0 COMMENT 'Amt in clovers (virtual token currency)',
+ `txn-amt_shiptokens` float NOT NULL DEFAULT 0 COMMENT 'Amt in shiptokens (virtual token currency)',
  `txn-amt_USD_cents` decimal(10,2) NOT NULL,
  `txn-time_created` timestamp NOT NULL DEFAULT current_timestamp(),
  `txn-time_updated` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
@@ -595,14 +595,14 @@ class class_gateway_crypto_NOWpayments extends class_main {
 		$txn_status_text = 'Your transaction status is unknown. Please contact support for assistance.';
 
 		// Get payment order details from the database
-		// `id`, `txn-hash`, `txn-hash_user`, `txn-status`, `txn-status_text`, `txn-amt_clovers`, `txn-amt_USD_cents`, `txn-time_created`, `txn-time_updated`, `txn-gateway`, `txn-gateway_response`, `txn-gateway_params`, `txn-comments`
+		// `id`, `txn-hash`, `txn-hash_user`, `txn-status`, `txn-status_text`, `txn-amt_shiptokens`, `txn-amt_USD_cents`, `txn-time_created`, `txn-time_updated`, `txn-gateway`, `txn-gateway_response`, `txn-gateway_params`, `txn-comments`
 		$query_payment_order = "SELECT
                                 id, 
                                 `txn-hash`, 
                                 `txn-hash_user`, 
                                 `txn-status`, 
                                 `txn-status_text`, 
-                                `txn-amt_clovers`, 
+                                `txn-amt_shiptokens`, 
                                 `txn-amt_USD_cents`, 
                                 `txn-time_created`, 
                                 `txn-time_updated`, 
@@ -735,8 +735,8 @@ class class_gateway_crypto_NOWpayments extends class_main {
 			// If expiration_estimate_date and valid_until are not in the latest_payment_order_status array, expiration_estimate_date and valid_until should equal to created_at time + 30mins instead
 			if (!array_key_exists('expiration_estimate_date', $latest_payment_order_status) || !array_key_exists('valid_until', $latest_payment_order_status)) {
 				$expiration_estimate_date = (new DateTime($row_payment_order['txn-time_created']))->modify('+30 minutes');
-				$expiration_estimate_date = (new DateTime($row_payment_order['txn_balance_initiated_time']))->modify('+30 minutes');
-				$valid_until_date = (new DateTime($row_payment_order['txn_balance_initiated_time']))->modify('+30 minutes');
+				$expiration_estimate_date = (new DateTime($row_payment_order['txn-time_created']))->modify('+30 minutes');
+				$valid_until_date = (new DateTime($row_payment_order['txn-time_created']))->modify('+30 minutes');
 			} else {
 				$expiration_estimate_date = new DateTime($latest_payment_order_status['expiration_estimate_date']);
 				$valid_until_date = new DateTime($latest_payment_order_status['valid_until']);
@@ -746,7 +746,7 @@ class class_gateway_crypto_NOWpayments extends class_main {
 			$expiration_date = DateTime::createFromFormat('U', min(
 				$expiration_estimate_date->getTimestamp(),
 				$valid_until_date->getTimestamp(),
-				(new DateTime($row_payment_order['txn_balance_initiated_time']))->modify('+30 minutes')->getTimestamp()
+				(new DateTime($row_payment_order['txn-time_created']))->modify('+30 minutes')->getTimestamp()
 			));
 			$valid_until_unixtime = $valid_until_date->getTimestamp();
 			$expiration_unixtime = $expiration_date->getTimestamp();
@@ -822,7 +822,7 @@ class class_gateway_crypto_NOWpayments extends class_main {
 								`txn-hash_user`, 
 								`txn-status`, 
 								`txn-status_text`, 
-								`txn-amt_clovers`, 
+								`txn-amt_shiptokens`, 
 								`txn-amt_USD_cents`, 
 								`txn-time_created`, 
 								`txn-time_updated`, 

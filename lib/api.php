@@ -139,6 +139,7 @@ switch ($request_method | $request_URI) {
 				- errors: Array of error messages.
 	*/
 	case $request_method == 'POST' && $request_URI == '/auth/register':
+		echo 'test1';
 		$register_result = $class_auth->user_create_request();
 		if ($register_result) {
 			$return_http_response_code = 200;
@@ -275,7 +276,7 @@ switch ($request_method | $request_URI) {
 			$class_main->add_error("Invalid JWT token", 'warning');
 			break;
 		}
-		$balance_result = $class_user_wallet->get_user_wallet_balance_amt_clovers($user_hash);
+		$balance_result = $class_user_wallet->get_user_wallet_balance_amt_shiptokens($user_hash);
 
 		// $balance_result should be a float or integer
 		if (is_numeric($balance_result)) {
@@ -393,7 +394,7 @@ switch ($request_method | $request_URI) {
 			X-Fp-Hash: A fingerprint hash for additional verification
 
 		Request Body (POST):
-			- amount_clovers: The amount of clovers to top up, in cents.
+			- amount_shiptokens: The amount of shiptokens to top up, in cents.
 			- payment_method: The payment method to use for the top-up.
 
 		Returns:
@@ -407,15 +408,15 @@ switch ($request_method | $request_URI) {
 	case $request_method == 'POST' && $request_URI == '/wallet/topup':
 
 		// Check if required POST parameters are set
-		if (!isset($_POST['amount_clovers']) || !isset($_POST['payment_method'])) {
+		if (!isset($_POST['amount_shiptokens']) || !isset($_POST['payment_method'])) {
 			$return_http_response_code = 400;
 			$return_array['success'] = false;
 			$class_main->add_error("Missing required parameters", 'warning');
 			break;
 		}
 
-		// Convert the amount of clovers to USD cents
-		$amt_USD_cents = $_POST['amount_clovers'] * default_clovers_to_USD_cents_rate;
+		// Convert the amount of shiptokens to USD cents
+		$amt_USD_cents = $_POST['amount_shiptokens'] * default_shiptokens_to_USD_cents_rate;
 
 		// The user must be logged in
 		if (!$flag_is_user_logged_in) {
@@ -428,7 +429,7 @@ switch ($request_method | $request_URI) {
 		// Switch case for the payment method
 		switch ($_POST['payment_method']) {
 			case 'crypto_nowpayments':
-				$topup_result = $class_user_wallet->create_topup_transaction_request($_POST['amount_clovers'], $amt_USD_cents, 'crypto_nowpayments');
+				$topup_result = $class_user_wallet->create_topup_transaction_request($_POST['amount_shiptokens'], $amt_USD_cents, 'crypto_nowpayments');
 				if ($topup_result) {
 					$return_http_response_code = 200;
 					$return_array['success'] = true;
@@ -557,7 +558,7 @@ switch ($request_method | $request_URI) {
 			$topup_transaction_request['txn-amt_USD_cents'] / 100,
 			$_POST['selected_coin'],
 			$topup_transaction_request['txn-hash'],
-			"CloversBet Topup for " . $topup_transaction_request['txn-amt_clovers'] . " clovers"
+			"shiptokensBet Topup for " . $topup_transaction_request['txn-amt_shiptokens'] . " shiptokens"
 		);
 
 		if ($new_order_result) {
@@ -723,6 +724,51 @@ switch ($request_method | $request_URI) {
 			$class_main->add_error("Order status retrieval failed", 'error');
 		}
 		break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+		/**
+		 * API Endpoint: /ship/validate_address
+		 * 
+		 * METHOD: POST
+		 * 
+		 * Description:
+		 * Validates addresses and checks for validity.
+		 * 
+		 * TODO
+		 * */
+
+
+
+
+
+
+
+		/**
+		 * API Endpoint: /ship/get_rates
+		 * 
+		 * METHOD: POST
+		 * 
+		 * Description:
+		 *   Submits surveyJS data and fetches rates from Shippo / Easyship.
+		 *
+		 * Request Headers:
+		 *   X-Fp-Reqid: A fingerprint request ID for additional verification
+		 *   X-Fp-Hash: A fingerprint hash for additional verification
+		 *
+		 * Request Body:
+		 * 
+		 * */
 
 
 
